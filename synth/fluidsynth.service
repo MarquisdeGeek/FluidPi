@@ -1,0 +1,12 @@
+[Unit]
+Description=Fluidsynth
+
+[Service]
+Type=forking
+# The PID file is optional, but recommended in the manpage
+# "so that systemd can identify the main process of the daemon"
+PIDFile=/var/run/fluidsynth.pid
+ExecStart=/home/synth/bin/fluidsynth_service.sh start
+
+[Install]
+WantedBy=multi-user.target

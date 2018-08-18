@@ -1,0 +1,6 @@
+
+You must install socat to use this version:
+
+apt-get install socat
+
+

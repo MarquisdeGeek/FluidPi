@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+/home/synth/synth/fluidsynth_service.sh start >/var/log/fluid.log 2>/var/log/fluid.err
+/home/synth/server/start.sh  >/var/log/fluid_server.log  2>/var/log/fluid_server.err
+
