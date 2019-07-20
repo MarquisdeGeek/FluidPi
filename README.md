@@ -7,7 +7,7 @@ and turn them into permanently-configured embedded devices. The first one is thi
 
 It uses SF2 soundfont files to generate the noises, and is controlled by a USB MIDI controller.
 
-It uses a web server in bash (really!) to control the sounds remote, so it can be run headless.
+It uses a web server in bash (really!) to control the sounds remotely, so it can be run headless.
 
 ## Installation
 There are several moving parts here:
@@ -23,6 +23,8 @@ a local network.
 
 Copy all the SF2 soundfont files you have into /home/synth/sf2, as this where the webserver will
 scan.
+
+Start the synth service by running rc.local, or starting it via systemd
 
 There maybe some other steps which I've forgotten.
 
